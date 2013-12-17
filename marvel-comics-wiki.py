@@ -28,7 +28,7 @@ def main():
             try:
                 title = titles[issue['title']]
                 title['min_issue'] = min(title['min_issue'], issue['number'])
-                title['max_issue'] = max(title['min_issue'], issue['number'])
+                title['max_issue'] = max(title['max_issue'], issue['number'])
             except KeyError:
                 titles[issue['title']] = {
                     'min_issue': issue['number'],
