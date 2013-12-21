@@ -1,3 +1,5 @@
+#!/usr/bin/python2
+
 import smtplib
 
 def send_email_with_gmail(username, password, to_address, subject, content):
