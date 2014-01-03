@@ -10,8 +10,8 @@ def gen_comics(year, month, log_file):
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
 
-    logger.info('beginning {0}, {1}'.format(month, str(year))
-    url = DOMAIN + '/Category:{0},_{1}'.format(str(year), month)
+    logger.info('beginning {0}, {1}'.format(month, str(year)))
+    url = '{0}/Category:{1},_{2}'.format(DOMAIN, str(year), month)
     page = urllib2.urlopen(url)
     soup = BeautifulSoup(page)
     divs = soup.findAll('div', {'class': 'lightbox-caption'})

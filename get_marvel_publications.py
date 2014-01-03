@@ -94,7 +94,7 @@ def create_args():
         nargs=1,
         default=[DEFAULT_LOG_FILE],
         type=str,
-        help='file to store log messages in about issues that could not be' \
+        help='file to store log messages in about issues that could not be ' \
             'parsed properly',
     )
     return parser.parse_args()
