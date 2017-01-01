@@ -29,7 +29,7 @@ for comic in comics_strings:
         'end_year': end_year
     })
 
-with open('output.txt', 'w') as f:
+with open('output.json', 'w') as f:
     f.write(json.dumps({
         'date': time.time(),
         'comics': comics
